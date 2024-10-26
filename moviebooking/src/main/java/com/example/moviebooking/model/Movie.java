@@ -20,14 +20,13 @@ public class Movie {
     private LocalDate releaseDate;
 
     @Column(nullable = false)
-    private String category; // "upcoming" or "this week"
+    private String category;
 
     @Column(nullable = false)
     private int availableSeats;
 
     public Movie() {}
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }

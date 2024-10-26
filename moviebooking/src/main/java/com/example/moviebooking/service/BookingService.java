@@ -28,7 +28,6 @@ public class BookingService {
             booking.setBookingTime(LocalDateTime.now());
             booking.setCancelled(false);
 
-            // Reduce seat count and save the booking
             movieService.updateAvailableSeats(movie, movie.getAvailableSeats() - 1);
             return bookingRepository.save(booking);
         } else {
@@ -46,7 +45,6 @@ public class BookingService {
                 booking.setCancelled(true);
                 bookingRepository.save(booking);
 
-                // Update movie seats to increase by 1
                 Movie movie = booking.getMovie();
                 movieService.updateAvailableSeats(movie, movie.getAvailableSeats() + 1);
             } else {

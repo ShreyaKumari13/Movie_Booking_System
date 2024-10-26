@@ -50,19 +50,6 @@ public class BookingController {
         }
     }
 
-    // @GetMapping("/user/{userId}")
-    // public ResponseEntity<List<Booking>> getUserBookings(@PathVariable Long
-    // userId) {
-    // Optional<User> userOpt =
-    // userService.findUserByUsername(String.valueOf(userId));
-
-    // if (userOpt.isPresent()) {
-    // List<Booking> bookings = bookingService.getBookingsByUser(userOpt.get());
-    // return new ResponseEntity<>(bookings, HttpStatus.OK);
-    // } else {
-    // return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-    // }
-    // }
     @GetMapping("/user/{userId}")
     public ResponseEntity<List<Booking>> getUserBookings(@PathVariable Long userId) {
         // Find user by ID instead of username
@@ -75,8 +62,5 @@ public class BookingController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-
-//     @DeleteMapping("/cancel/{bookingId}")
-// public ResponseEntity<String> cancelBooking(@PathVariable Long bookingId) { ... }
 
 }

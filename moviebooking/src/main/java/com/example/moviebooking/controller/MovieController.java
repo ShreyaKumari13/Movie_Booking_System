@@ -9,29 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-// @RestController
-// @RequestMapping("/api/movies")
-// public class MovieController {
-
-//     @Autowired
-//     private MovieService movieService;
-
-//     @GetMapping("/category/{category}")
-//     public ResponseEntity<List<Movie>> getMoviesByCategory(@PathVariable String category) {
-//         List<Movie> movies = movieService.getMoviesByCategory(category);
-//         return new ResponseEntity<>(movies, HttpStatus.OK);
-//     }
-
-//     @GetMapping("/{id}")
-//     public ResponseEntity<Movie> getMovieById(@PathVariable Long id) {
-//         return movieService.getMovieById(id)
-//                 .map(movie -> new ResponseEntity<>(movie, HttpStatus.OK))
-//                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
-//     }
-// }
-
-
-
 @RestController
 @RequestMapping("/api/movies")
 public class MovieController {

@@ -23,8 +23,4 @@ public class UserService {
         return userRepository.findById(userId); // Assuming you have this method in your UserRepository
     }
 
-    // public Optional<User> findUserById(Long userId) {
-    //     // TODO Auto-generated method stub
-    //     throw new UnsupportedOperationException("Unimplemented method 'findUserById'");
-    // }
 }
