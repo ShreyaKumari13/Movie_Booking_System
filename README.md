@@ -31,7 +31,6 @@ This Movie Booking System is a backend and frontend application that allows user
 
 ### Prerequisites
 - Java Development Kit (JDK 11+)
-- Node.js (v14+), npm (v6+)
 - Spring Boot dependencies
 - Git
 
@@ -53,8 +52,29 @@ This Movie Booking System is a backend and frontend application that allows user
      ```
    - **H2 Database Console**:
      Access the database at `http://localhost:8080/h2-console` (URL and credentials can be updated in `application.properties`).
+     
+3. **Database Setup**
+     ```bash
+      CREATE DATABASE moviedb;
+      use moviedb;
+      Insert "Upcoming Movies"
+      INSERT INTO movie (title, release_date, category, available_seats) VALUES 
+      ('Future Blockbuster', '2024-01-15', 'upcoming', 100),
+      ('Sci-Fi Saga', '2024-02-10', 'upcoming', 80),
+      ('Adventure Quest', '2024-03-05', 'upcoming', 120),
+      ('Mystery Island', '2024-03-25', 'upcoming', 70),
+      ('Epic Journey', '2024-04-12', 'upcoming', 90);
+         
+       INSERT INTO movie (title, release_date, category, available_seats) VALUES 
+        ('Action Thriller', CURDATE(), 'this_week', 50),
+        ('Comedy Special', CURDATE(), 'this_week', 60),
+        ('Romantic Drama', CURDATE(), 'this_week', 40),
+        ('Animated Adventure', CURDATE(), 'this_week', 75),
+        ('Horror Nights', CURDATE(), 'this_week', 30);
+    
+     ```
 
-3. **Frontend Setup**
+4. **Frontend Setup**
    - Navigate to the frontend folder.
      ```bash
      cd ../movie-booking-frontend
