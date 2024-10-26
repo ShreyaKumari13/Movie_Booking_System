@@ -57,7 +57,6 @@ This Movie Booking System is a backend and frontend application that allows user
      ```bash
       CREATE DATABASE moviedb;
       use moviedb;
-      Insert "Upcoming Movies"
       INSERT INTO movie (title, release_date, category, available_seats) VALUES 
       ('Future Blockbuster', '2024-01-15', 'upcoming', 100),
       ('Sci-Fi Saga', '2024-02-10', 'upcoming', 80),
