@@ -136,7 +136,7 @@ This Movie Booking System is a backend and frontend application that allows user
 ## Project Structure
 ```plaintext
 Movie_Booking_System/
-├── movie-booking-backend/       # Spring Boot backend
+├── moviebooking/       # Spring Boot backend
 │   ├── src/                     # Source code for backend
 │   ├── pom.xml                  # Maven dependencies
 │   └── application.properties   # Database and server configuration
