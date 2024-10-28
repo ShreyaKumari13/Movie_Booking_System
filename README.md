@@ -44,7 +44,7 @@ This Movie Booking System is a backend and frontend application that allows user
 2. **Backend Setup**
    - Navigate to the backend folder.
      ```bash
-     cd movie-booking-backend
+     cd moviebooking
      ```
    - Start the Spring Boot application.
      ```bash
